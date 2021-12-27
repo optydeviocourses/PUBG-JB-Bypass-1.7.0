@@ -2,5 +2,5 @@
 #include <dlfcn.h>
 
 %ctor{
-	void *handlerD = dlopen("/usr/lib/pubg", RTLD_NOW);
+	void *pubg_handler = dlopen("/usr/lib/pubg", RTLD_NOW);
 }
